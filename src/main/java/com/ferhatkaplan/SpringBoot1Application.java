@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 )
 
 //AuditingEnable
-//Dikkat: AuditorAware metodumuzu buraya yazacağız
+//Dikkat: AuditorAware methodumuzu buraya yazacağız
 @EnableJpaAuditing(auditorAwareRef = "auditorAwareMethod")
 public class SpringBoot1Application {
 
