@@ -1,7 +1,9 @@
 package com.ferhatkaplan;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 //@SpringBootApplication
@@ -13,8 +15,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 )
 
 //AuditingEnable
-//Dikkat: AuditorAware methodumuzu buraya yazacağız
 @EnableJpaAuditing(auditorAwareRef = "auditorAwareMethod")
+
 public class SpringBoot1Application {
 
     //PSVM Method
